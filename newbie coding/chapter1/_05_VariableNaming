@@ -1,0 +1,34 @@
+package chap_01;
+
+public class _05_VariableNaming {
+    public static void main(String[] args) {
+
+        //입국 신고서 (여행)
+        String nationality = "대한민국"; //국적
+        String firstName = "모하메드"; //이름
+        String lastname = "살라"; //성
+        String dateOfBirth = "2001-12-31"; // 생년월일
+        String residentialAddress = "어떤 호텔"; // 체류지
+        String purposeOfVisit = "관광"; // 입국 목적
+        String flightNo = "KE123"; // 항공편
+        String _flightNo = "KE123"; // 밑줄 시작
+        String flight_No_2 = "KE123"; // 밑줄 숫자 포함
+
+        int accompany = 2; //동반 가족 수
+        int lengthOfStay = 5; // 체류일
+
+        String item1 = "시계";
+        String item2 = "가방";
+        //String 3item1 = "시계";
+
+        // 프로그램의 흐름을 위해 사용되는 경우 등 (이름이 크게 중요치 않은 경우)
+        int i = 0;
+        String s = "";
+        String str = "";
+
+        // 절대 변하지 않는 상수는 대문자
+        final String CODE = "KR";
+
+
+    }
+}
