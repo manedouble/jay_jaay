@@ -1,10 +1,6 @@
 # Java
 ## chapter 1
 ## chapter 2
-## chapter 3
-## chapter 4
-## chapter 5
-## chapter 6
 
 
 -----------------
@@ -20,7 +16,8 @@
 
 ## 하이퍼링크
 
-<https://www.naver.com>
-[유튜브](https://www.youtube.com/)
+1. <https://www.naver.com>
+2. [유튜브](https://www.youtube.com/)
+3. [readme 작성법 링크](https://backendcode.tistory.com/165)
 
 -----------
