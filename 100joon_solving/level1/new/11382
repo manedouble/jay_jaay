@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        long J = sc.nextLong();
+        long W = sc.nextLong();
+        long C = sc.nextLong();
+        System.out.println(J + W + C);
+    }
+}
+
+// 포인트는 큰 숫자의 범위를 고려해야 한다는 점에서 int 대신 long을 넣어주기만 하면 된다. 어렵지 않았다.
