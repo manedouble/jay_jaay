@@ -1,0 +1,18 @@
+import java.util.Scanner;
+    public class Main {
+
+        public static void main(String[] args) {
+            Scanner in = new Scanner(System.in);
+
+            int S = in.nextInt();
+            int M = in.nextInt();
+            
+            in.close();
+            
+            if(S > M) System.out.println(">");
+            else if(S < M) System.out.println("<");
+            else System.out.println("==");
+        }
+}
+
+// 단순 숫자 비교툴을 만드는 문제이다. S와 M이라는 변수를 설정한 뒤 if와 else if 함수를 이용해 조건 설정만 해주면 크게 문제는 없다.
