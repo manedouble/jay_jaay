@@ -1,0 +1,21 @@
+java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+
+        int a = (y % 10) * x;
+        int b = ((y % 100) / 10) * x;
+        int c = (y / 100) * x;
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(x * x);
+
+    }
+
+}
+
+// 세 자리 수 곱셈이라 그래서 쫄았는데 굳이 그럴 것 없이 int로 정수 지정 후 곱하는 부분만 구분하면 되는 문제
