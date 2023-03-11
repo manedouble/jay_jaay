@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int hour = sc.nextInt();
+        int minute = sc.nextInt();
+
+        if (minute >= 45) {
+            minute = minute - 45;
+        }
+        else {
+            minute = minute + 15;
+            if (hour == 0) {
+                hour = 23;
+            }
+            else {
+                hour --;
+            }
+        }
+        System.out.println(hour + " " + minute);
+    }
+}
+// 45분 일찍 깨우는 알람, 45분 미만일 때는 15분을 더하고 hour의 범위가 23이 최대임을 고려해서 마지막에 0으로 바꿔주는 것까지 해줘야함
