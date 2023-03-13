@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String id = scanner.findInLine();
+        System.out.println(id + "??!");
+    }
+}
+
+// id 만들기, id 뒤에 ??!만 붙어서 출력되게 만드는 간단한 문제
