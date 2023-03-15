@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+    public class Main {
+        public static void main(String[] args) {
+
+            Scanner timer = new Scanner(System.in);
+
+            int A = timer.nextInt();
+            int B = timer.nextInt();
+
+            int C = timer.nextInt();
+
+            int min = 60 * A + B;
+            min += C;
+
+            int hour = (min / 60) % 24;
+            int minute = min % 60;
+
+            System.out.println(hour + " " + minute);
+        }
+}
+
+// 오븐 타이머, 60분 초과 시 다음 시간으로 넘기며 24시간 제한 고려해서 scanner 함수 이용해서 만듦
