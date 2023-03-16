@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+
+		int X = sc.nextInt();
+		for (int i = 1; i <= X ; i++) {
+			int A = sc.nextInt();
+			int B = sc.nextInt();
+			System.out.println("Case #" + i + ": " + A + " + " + B + " = " + (A + B));
+		  }
+    }
+}
+
+// 스캐너 함수를 이용하고 fori 구문으로 간단한 계산 툴을 만들어줌
