@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        int z = sc.nextInt();
+        
+        if (x == y && y == z)
+            System.out.print(10000 + x * 1000);
+        else if (x == y || x == z)
+            System.out.print(1000 + x * 100);
+        else if (y == z)
+            System.out.print(1000 + y * 100);
+        else
+            System.out.print((Math.max(Math.max(x, y), z) * 100));
+    }
+}
+
+// 주사위 3개를 던져서 나오는 결과에 따라 값을 다르게 출력하는 문제, 말이 길어서 복잡해보이기는 한데 그냥 시키는대로 하면 나옴. 특이점은 가장 큰 눈을 계산하기 위해 math.max 함수를 이용한다는 점.
