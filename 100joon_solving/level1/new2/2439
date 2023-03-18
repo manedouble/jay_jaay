@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int s = sc.nextInt();
+
+        for (int i = 1; i <= s; i++) {
+            for (int x = s - 1; x >= i; x--) { // 이 부분에 공백을 넣어줌으로서 별을 역순으로 출력되도록 만들어줌
+                System.out.print(" ");
+            }
+            for (int y = 1; y <= i; y++) {
+                System.out.print("*");
+            }
+            System.out.println(" ");
+        }
+
+    }
+}
+
+// 2438번과 비슷함, 역으로 어떻게 출력할지에 대한 고민을 함
