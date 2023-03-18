@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        while (sc.hasNext()) {
+
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+
+            System.out.println(a + b);
+        }
+    }
+}
+
+// sc.hasNext()이용, 간단한 계산툴, hasNext()는 boolean 타입으로 t/f 형태로 나옴
