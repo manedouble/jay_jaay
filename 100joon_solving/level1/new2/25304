@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main (String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt(); // 영수증 총 금액
+        int b = sc.nextInt(); // 물건 종류의 수
+        int total = 0;
+
+        for(int i = 0; i < b; i++){
+            int x = sc.nextInt(); // 각 물건 값
+            int y = sc.nextInt(); // 각 물건 갯수
+            total += x * y;
+        }
+        if (total == a) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+    }
+}
+
+// 영수증 총 금액과 total이 맞는지 여부를 확인하는 문제, 스캐너 함수를 이용하고 문제가 복잡해보여서 꼬이기 쉬웠음. fori 함수를 이용하면 의외로 잘 풀림. if문 생각이 바로 안 났음.
