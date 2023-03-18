@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int s = sc.nextInt();
+
+        for(int i = 0; i < s; i++) {
+            for(int j = 0; j < i + 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println("");
+        }
+    }
+}
+
+// scanner 함수를 이용하고 fori문을 이용해서 별을 출력함, 마지막 ""출력이 없으면 별이 한 줄에 다 출력돼서 마지막 ""을 넣어주는게 포인트
