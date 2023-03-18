@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        int x = sc.nextInt();
+        for (int i = 1; i <= x; i++) {
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+            System.out.println("Case #" + i + ": " + (a + b));
+        }
+    }
+}
+
+꾸준히 풀던 계산 문제 스타일, fori 형태로 풀어냄, system.out 구문 안에 들어갈 것들만 주의해서 입력해주면 됨
