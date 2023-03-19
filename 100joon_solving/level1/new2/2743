@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+    
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextLine().length();
+        
+        System.out.println(x);
+    }
+}
+
+// 입력한 단어의 길이를 재는 꽤 간단한 문제.
