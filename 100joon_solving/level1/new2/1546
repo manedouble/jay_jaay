@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt(); // 입력 과목 수
+        double[] record = new double [N];
+        double max = 0;
+        double average = 0;
+
+        for (int i = 0; i < record.length; i++) {
+            record[i] = sc.nextInt();
+            if (record[i] > max) {
+                max = record[i];
+            }
+        }
+
+        for (int j = 0; j < record.length; j++) {
+            average += (record[j] / max * 100) / N;
+        }
+        System.out.println(average);
+    }
+}
+
+// 입력 과목 숫자 설정 후 평균만 뽑아내면 되는 문제라 길이에 비해서 간단하게 풀림. 처음에 double 써야 하는 부분에서 int 계속 쓰다 막혔던 후문
